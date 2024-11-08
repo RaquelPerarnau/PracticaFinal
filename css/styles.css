@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Navbar Styles */
+.navbar {
+    border-bottom: 2px solid #fff; /* Retro underline effect */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Highlight Text */
+.text-highlight {
+    color: #FF5733; /* Highlight color */
+}
+
+.text-highlight:hover {
+    color: #FF9470; /* Lighter highlight on hover */
+}
+
+/* Form Styles */
+.retro-input {
+    border: 2px solid #FF5733; /* Retro input style */
+    background-color: #111; /* Dark input background */
+    color: #fff;
+}
+
+.btn-highlight {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-highlight:hover {
+    background-color: #FF9470;
+    color: #000;
+}
