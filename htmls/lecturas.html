@@ -6,6 +6,7 @@
     <title>Lecturas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/lecturas.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -46,17 +47,33 @@
       </div>
     </nav>
   
-      <!-- Contenido de prueba -->
-    <section style="height: 100vh; background: url('image1.jpg') no-repeat center center/cover;">
-        <h1 style="color: white; text-align: center; padding-top: 40vh;">Sección Inicial</h1>
-    </section>
-    <section style="height: 150vh; background-color: var(--celadon);">
-        <h2 style="text-align: center; padding-top: 20vh;">Contenido de Prueba para Scroll</h2>
+    <!-- Imagen Principal -->
+    <section class="lecturas-header position-relative">
+      <img src="../multimedia/imagenes/test.jpg" alt="Imagen Principal" class="img-fluid w-100 header-img">
+      <div class="overlay"></div>
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+          <h1 class="display-3">Lecturas</h1>
+      </div>
     </section>
 
-    <!-- Contenido -->
-    <section style="height: 100vh; background: url('image1.jpg') no-repeat center center/cover;">
-        <!-- Imagen de fondo -->
+    <!-- Sección de Introducción -->
+    <section class="lecturas-intro py-5 bg-floral-white text-center">
+        <div class="container">
+            <h2 class="mb-4 text-hunter-green">Explora nuestras lecturas</h2>
+            <p class="text-hunter-green">
+                En esta página encontrarás análisis objetivos y detallados de distintas lecturas que te inspirarán y te ayudarán a ver el mundo desde nuevas perspectivas.
+                Cada lectura es seleccionada con ejemplos claros y útiles para tu desarrollo personal y profesional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Galería de Lecturas -->
+    <section class="lecturas-galeria py-5">
+        <div class="container">
+            <div class="row g-4" id="galeria-content">
+                <!-- Imágenes generadas dinámicamente con JavaScript -->
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -112,6 +129,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../jscript/script.js"></script>
+    <script src="../jscript/lesturas.js"></script>
 </body>
 </html>
 
