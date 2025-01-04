@@ -1,0 +1,90 @@
+[
+    {
+        "id": "7habitos",
+        "title": "Los 7 Hábitos de la Gente Altamente Efectiva",
+        "subtitle": "Un análisis de los principios clave de Stephen Covey",
+        "date": "2024-11-03",
+        "category": "lectura",
+        "youtube_video": null, 
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/7habitos.txt"
+    },
+    {
+        "id": "deporte",
+        "title": "Cómo el Deporte Potencia la Productividad y Construye Disciplina",
+        "subtitle": "Cómo la actividad física transforma el cuerpo y la mente",
+        "date": "2024-07-14",
+        "category": "articulo",
+        "youtube_video": null,
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/deporte.txt"
+    },
+    {
+        "id": "disciplina",
+        "title": "La Disciplina Marcará tu Destino",
+        "subtitle": "Una Guía Para Forjar el Carácter y Vivir con Propósito",
+        "date": "2024-05-02",
+        "category": "lectura",
+        "youtube_video": null,
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/disciplina.txt"
+    },
+    {
+        "id": "essentialism",
+        "title": "Essentialism: The Disciplined Pursuit of Less",
+        "subtitle": "Una guía para hacer menos, pero mejor",
+        "date": "2024-08-05",
+        "category": "lectura",
+        "youtube_video": null,
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/essentialism.txt"
+    },
+    {
+        "id": "maslow",
+        "title": "La Pirámide de Maslow",
+        "subtitle": "Cómo Entender Nuestras Necesidades y Alcanzar el Éxito",
+        "date": "2025-01-01",
+        "category": "lectura",
+        "youtube_video": "https://www.youtube.com/watch?v=dMk_MHw1myA",
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/Maslow.txt"
+    },
+    {
+        "id": "slowProductivity",
+        "title": "Slow Productivity",
+        "subtitle": "Una Nueva Forma de Trabajar en un Mundo Acelerado",
+        "date": "2024-12-15",
+        "category": "lectura",
+        "youtube_video": null,
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/slowProductivity.txt"
+    },
+    {
+        "id": "smart",
+        "title": "Cómo Crear Metas SMART para 2025",
+        "subtitle": "Una Guía Paso a Paso",
+        "date": "2025-01-02",
+        "category": "articulo",
+        "youtube_video": "https://www.youtube.com/watch?v=1-SvuFIQjK8&t=6s",
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/SMART.txt"
+    },
+    {
+        "id": "variables",
+        "title": "Cuando No Controlas Todas las Variables",
+        "subtitle": "Cómo Seguir Adelante y Mantener el Foco",
+        "date": "2025-01-03",
+        "category": "articulo",
+        "youtube_video": null,
+        "image": "multimedia/imagenes/test.jpg",
+        "author": "Raquel P.L.",
+        "file": "textos/variables.txt"
+    }
+]

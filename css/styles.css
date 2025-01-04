@@ -1,111 +1,327 @@
-/* General Styles */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+/* COLORES */
+:root {
+    --eerie-black: #1d201cff;
+    --hunter-green: #3a5635ff;
+    --asparagus: #74ab6aff;
+    --celadon: #afc6a0ff;
+    --beige: #dbe3c2ff;
+    --floral-white: #fdfcf2ff;
+    --almond: #eae0d5ff;
+    --khaki: #c6ac8fff;
+    --walnut-brown: #5e503fff;
 }
 
-/* Navbar Styles */
-.navbar {
-    border-bottom: 2px solid #fff; /* Retro underline effect */
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-brand {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: bold;
+/* ===================================================== 
+    NAVBAR 
+    =====================================================*/
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    /* Alinea todos los hijos verticalmente */
+    justify-content: space-between;
+    /* Distribuye logo y enlaces */
+    transition: all 0.3s ease-in-out;
+    background-color: var(--hunter-green);
+    /* Fondo inicial */
+    padding: 20px 50px;
+    /* Ajustar separación lateral */
 }
 
-.navbar-nav .nav-link {
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-right: 10px;
+.custom-navbar.scrolled {
+    background-color: var(--floral-white);
+    /* Fondo blanco al hacer scroll */
+    padding: 10px 50px;
+    /* Mantener separación lateral al hacer scroll */
+}
+
+/* Logo */
+.custom-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Centra el logo verticalmente */
+    margin-right: auto;
+    /* Empuja los enlaces hacia la derecha */
+}
+
+.custom-navbar .navbar-brand .logo {
+    height: 80px;
+    transition: height 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: invert(96%) sepia(4%) saturate(1462%) hue-rotate(48deg) brightness(115%) contrast(98%);
+    /* Floral White */
+}
+
+.custom-navbar .navbar-brand .logo:hover {
+    filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
+    /* Khaki */
+}
+
+.custom-navbar.scrolled .navbar-brand .logo {
+    height: 40px;
+    filter: invert(25%) sepia(6%) saturate(3077%) hue-rotate(65deg) brightness(106%) contrast(83%);
+    /* Hunter Green */
+}
+
+.custom-navbar.scrolled .navbar-brand .logo:hover {
+    filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
+    /* Khaki */
+}
+
+/* Título de la web */
+.web-title {
+    font-size: 2.5rem; /* Tamaño del título */
+    font-weight: 600; /* Negrita */
+    margin-left: 15px;
+    color: var(--floral-white); /* Color inicial */
+    transition: color 0.3s ease-in-out; /* Cambio de color suave */
+}
+
+/* Cambiar color con scroll */
+.custom-navbar.scrolled .web-title {
+    color: var(--hunter-green); /* Cambiar a verde oscuro */
+}
+
+/* Enlaces */
+.custom-navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los enlaces */
+    gap: 20px;
+    /* Espaciado horizontal entre enlaces */
+}
+
+.custom-navbar .nav-link {
+    font-size: 20px;
+    /* Tamaño aumentado */
+    padding: 5px 15px;
+    /* Espaciado interno adicional */
+    color: var(--floral-white);
+    /* Texto inicial blanco */
     transition: color 0.3s ease-in-out;
 }
 
-/* Highlight Text */
-.text-highlight {
-    color: #FF5733; /* Highlight color */
+.custom-navbar .nav-link:hover {
+    color: var(--khaki);
+    /* Hover en khaki */
 }
 
-.text-highlight:hover {
-    color: #FF9470; /* Lighter highlight on hover */
+.custom-navbar .nav-item.active .nav-link {
+    font-weight: bold;
+    color: var(--celadon);
+    /* Activo en celadon cuando la navbar está alta */
 }
 
-/* Form Styles */
-.retro-input {
-    border: 2px solid #FF5733; /* Retro input style */
-    background-color: #111; /* Dark input background */
-    color: #fff;
+/* Cambios al hacer scroll */
+.custom-navbar.scrolled .nav-link {
+    color: var(--hunter-green);
+    /* Texto en hunter green después de scroll */
 }
 
-.btn-highlight {
-    background-color: #FF5733;
-    color: #fff;
+.custom-navbar.scrolled .nav-link:hover {
+    color: var(--khaki);
+    /* Hover en khaki después de scroll */
+}
+
+.custom-navbar.scrolled .nav-item.active .nav-link {
+    color: var(--walnut-brown);
+    /* Activo en walnut brown después de scroll */
+}
+
+/* Iconos iniciales (navbar alta) */
+.nav-icon {
+    width: 30px;
+    /* Tamaño del icono */
+    height: 30px;
+    margin-right: 8px;
+    /* Espaciado entre el icono y el texto */
+    transition: filter 0.3s ease-in-out;
+    /* Suave transición de color */
+    filter: invert(96%) sepia(4%) saturate(1462%) hue-rotate(48deg) brightness(115%) contrast(98%);
+    /* Floral White */
+}
+
+/* Hover y activo (navbar alta) */
+.nav-link:hover .nav-icon {
+    filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
+    /* Cambiar a khaki */
+}
+
+.nav-item.active .nav-icon {
+    filter: invert(82%) sepia(32%) saturate(211%) hue-rotate(100deg) brightness(90%) contrast(85%);
+    /* Celadon */
+}
+
+/* Iconos cuando la navbar está scrolled */
+.custom-navbar.scrolled .nav-icon {
+    filter: invert(25%) sepia(35%) saturate(354%) hue-rotate(85deg) brightness(90%) contrast(92%);
+    /* Hunter Green */
+}
+
+/* Hover y activo (navbar scrolled) */
+.custom-navbar.scrolled .nav-link:hover .nav-icon {
+    filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
+    /* Cambiar a khaki */
+}
+
+.custom-navbar.scrolled .nav-item.active .nav-icon {
+    filter: invert(28%) sepia(44%) saturate(266%) hue-rotate(353deg) brightness(96%) contrast(88%);
+    /* Walnut Brown */
+}
+
+/* Estilo del icono personalizado */
+/* Botón normal (navbar alta) */
+.navbar-toggler {
     border: none;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn-highlight:hover {
-    background-color: #FF9470;
-    color: #000;
-}
-
-/* ANIMACIONES EN LOS ENLACES */
-
-.navbar-nav .nav-link {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #FF5733; /* Color del subrayado */
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease-out;
-}
-
-.navbar-nav .nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* BOTON INTEREACTIVO BUSCADOR */
-
-.search-bar input {
-    width: 0;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-.search-bar input:focus {
-    width: 200px;
-    opacity: 1;
-}
-
-.search-bar button {
-    background-color: #FF5733;
-    color: #fff;
+    /* Quitar el borde */
+    background: transparent;
+    /* Fondo transparente */
+    outline: none;
+    /* Quitar el contorno al hacer clic */
+    box-shadow: none;
+    /* Quitar el sombreado */
+    padding: 0;
     transition: transform 0.3s ease-in-out;
+    /* Transición para la rotación */
 }
 
-.search-bar button:hover {
-    transform: scale(1.1);
+/* Icono del botón (navbar alta) */
+.custom-toggler-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Transición para rotación y color */
+    filter: invert(100%) sepia(15%) saturate(1204%) hue-rotate(339deg) brightness(106%) contrast(98%);
+    /* Floral White*/
 }
 
-.nav-link.active {
-    color: #FF5733 !important; /* Destaca el enlace activo */
-    font-weight: bold; /* Opcional: Hacerlo más visible */
-    border-bottom: 2px solid #FF5733; /* Línea debajo para retro look */
+/* Rotación del botón cuando el menú está abierto */
+.navbar-toggler:not(.collapsed) .custom-toggler-icon {
+    transform: rotate(90deg);
+    /* Rotación al abrir el menú */
+}
+
+/* Botón y icono cuando la navbar está scrolled */
+.custom-navbar.scrolled .navbar-toggler {
+    background: transparent;
+}
+
+.custom-navbar.scrolled .custom-toggler-icon {
+    filter: invert(25%) sepia(35%) saturate(354%) hue-rotate(85deg) brightness(90%) contrast(92%);
+    /* Hunter Green */
+}
+
+/* Quitar contorno al botón en focus y hover */
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    outline: none;
+    box-shadow: none;
+    /* Sin borde ni sombra */
+}
+
+/* ===================================================== 
+    FOOTER
+    =====================================================*/
+
+/* Estilos personalizados para el footer */
+.bg-walnut-brown {
+    background-color: var(--walnut-brown);
+}
+
+.text-floral-white {
+    color: var(--floral-white);
+}
+
+/* Margen superior adicional para separar el footer del contenido anterior */
+.footer {
+    margin-top: 0px;
+    padding-top: 1rem;
+}
+
+/* Tamaño del texto */
+.footer-title {
+    font-size: 2rem;
+    /* Título más grande */
+    font-weight: bold;
+}
+
+/* Texto debajo del título (justificado y más pequeño) */
+.footer-description {
+    font-size: 1rem;
+    /* Tamaño reducido */
+    line-height: 1.5;
+    text-align: justify;
+    /* Justificación del texto */
+    margin-bottom: 1.5rem;
+    /* Espaciado inferior adicional */
+}
+
+/* Subtítulos más grandes */
+.footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Separación entre las dos secciones */
+.footer .row>.col-md-6 {
+    padding-right: 1.5rem;
+    /* Espaciado derecho */
+    padding-left: 1.5rem;
+    /* Espaciado izquierdo */
+}
+
+/* Lista de enlaces */
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.8rem;
+    /* Más espacio entre elementos */
+}
+
+.footer a {
+    color: var(--floral-white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* Texto de enlaces más grande */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para enlaces */
+.footer a:hover {
+    color: var(--beige);
+    transform: translateX(5px); /* Efecto de movimiento al pasar el ratón */
+}
+
+/* Aumentar legibilidad del texto */
+.footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Alinear el CTA */
+.footer .text-center {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--floral-white);
+}
+
+/* Colores dinámicos */
+.footer span {
+    color: var(--asparagus);
+    /* Color de énfasis */
+}
+
+/* Iconos y emojis: Manténlos visibles y no cargados */
+.footer strong {
+    font-weight: bold;
 }

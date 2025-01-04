@@ -1,0 +1,231 @@
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: var(--eerie-black);
+}
+
+.hero-img {
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(29, 32, 28, 0.6), rgba(0, 0, 0, 1));
+    z-index: 2;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    color: var(--floral-white);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--floral-white);
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--floral-white);
+}
+
+/* HERO LOGO */
+.hero-logo {
+    max-width: 250px;
+    height: auto;
+    margin-top: 1rem;
+    filter: invert(96%) sepia(4%) saturate(1462%) hue-rotate(48deg) brightness(115%) contrast(98%);
+    opacity: 0.9;
+}
+
+/* PRESENTACIÓN */
+.presentation {
+    background-color: var(--beige);
+}
+
+.presentation-title {
+    font-size: 2.8rem; /* Un poco más grande */
+    font-weight: bold;
+    color: var(--hunter-green);
+    margin-bottom: 1.5rem;
+}
+
+.presentation-text {
+    font-size: 1.3rem; /* Más grande */
+    color: var(--eerie-black);
+    max-width: 850px; /* Más ancho */
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify; /* Justifica el texto para mejorar la legibilidad */
+}
+
+/* CARTAS */
+.card {
+    background-color: var(--floral-white);
+    border: 1px solid var(--celadon);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--hunter-green);
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: var(--eerie-black);
+    margin-bottom: 1.2rem; /* Reducido para que las tarjetas sean más estrechas */
+}
+
+/* TARJETAS MÁS ESTRECHAS */
+.card-narrow {
+    height: 100%; /* Altura dinámica basada en el contenido */
+    padding: 1.5rem 1rem; /* Más compacta */
+}
+
+/* BOTÓN */
+.btn-primary {
+    background-color: var(--asparagus);
+    border: none;
+    color: var(--floral-white);
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--hunter-green);
+    color: var(--beige);
+}
+
+
+/* SECCIÓN DEL CARRUSEL */
+.carousel-section {
+    height: 100vh; /* El carrusel ocupa toda la pantalla */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh; /* Ajusta la altura de los items */
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+/* CAPA DE TRANSPARENCIA OSCURA */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparencia oscura */
+    z-index: 2;
+}
+
+/* CONTENIDO DEL CARRUSEL */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 3;
+    color: var(--floral-white); /* Usa tu color de la paleta */
+    text-align: center;
+    max-width: 50%;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* ENLACE EN EL CARRUSEL */
+.carousel-caption a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--floral-white); /* Color inicial */
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption a:hover {
+    color: var(--asparagus); /* Hover en asparagus */
+    border-bottom: 2px solid var(--asparagus); /* Línea inferior en hover */
+}
+
+/* ICONOS PERSONALIZADOS */
+.custom-carousel-icon {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra opcional */
+    transition: transform 0.3s ease; /* Efecto en hover */
+}
+
+.custom-carousel-icon:hover {
+    transform: scale(1.2); /* Agrandar ligeramente en hover */
+}
+
+/* POSICIONAMIENTO DE LOS BOTONES */
+.carousel-control-prev,
+.carousel-control-next {
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%);
+    z-index: 5; /* Asegurar que estén visibles */
+}
+
+.carousel-control-prev {
+    left: -50px; /* Ajusta la posición izquierda */
+}
+
+.carousel-control-next {
+    right: -50px; /* Ajusta la posición derecha */
+}
+
+
+
+
