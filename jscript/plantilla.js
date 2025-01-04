@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("../entradas.json")
+    fetch("../textos/entradas.json")
         .then(response => response.json())
         .then(articles => {
             const article = articles.find(a => a.id === articleId);

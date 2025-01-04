@@ -1,0 +1,233 @@
+/* Encabezado con Imagen */
+.articulos-header {
+    height: 100vh; /* Ocupa toda la pantalla */
+    position: relative; /* Necesario para posicionar los elementos hijos */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+}
+
+.header-img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 100%; /* Imagen ocupa todo el alto */
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+    position: absolute; /* Absoluta para colocarse detrás del contenido */
+    z-index: 0; /* Capa más baja */
+}
+
+.overlay {
+    position: absolute; /* Absoluta sobre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cubre toda la imagen */
+    height: 100%; /* Cubre toda la imagen */
+    background: rgba(0, 0, 0, 0.6); /* Transparencia oscura */
+    z-index: 1; /* Capa intermedia */
+}
+
+/* Contenedor del Texto */
+.articulos-header .text-center {
+    position: relative; /* Necesario para que el z-index tenga efecto */
+    z-index: 2; /* Capa más alta, encima del overlay */
+    color: var(--floral-white); /* Título en color floral white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+/* Título Principal */
+.articulos-header .text-center h1 {
+    font-size: 4rem; /* Tamaño grande */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 0; /* Sin margen inferior */
+    line-height: 1.2; /* Altura de línea compacta */
+}
+
+/* Introducción */
+.articulos-intro {
+    padding: 3rem 0;
+}
+
+.articulos-intro h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.articulos-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Timeline */
+.articulos-timeline {
+    background-color: var(--beige);
+}
+
+.timeline-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--asparagus);
+    padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+/* Contenedor Común para Imágenes y Videos */
+.timeline-media {
+    flex: 1 1 auto;
+    max-width: 40%; /* Ancho máximo en pantallas grandes */
+}
+
+/* Contenido del Texto */
+.timeline-content {
+    flex: 1 1 auto;
+    max-width: 60%; /* Ancho máximo en pantallas grandes */
+    text-align: left;
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--hunter-green);
+}
+
+.timeline-content p {
+    color: var(--hunter-green);
+    font-size: 1.2rem;
+}
+
+/* Botón Leer Más */
+.timeline-content a {
+    display: inline-block; /* Asegura un área clicable */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background: var(--asparagus); /* Fondo inicial */
+    color: var(--floral-white); /* Texto inicial */
+    text-decoration: 2px; /* Sin subrayado */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Hover del Botón */
+.timeline-content a:hover {
+    background: var(--hunter-green); /* Fondo en hover */
+    color: var(--asparagus); /* Texto en hover *2xp */
+}
+
+/* Responsivo para Pantallas Pequeñas */
+@media (max-width: 992px) { /* Pantallas menores a large */
+    .timeline-media {
+        max-width: 100%; /* Ancho completo */
+    }
+
+    .timeline-content {
+        max-width: 100%; /* Ancho completo */
+        text-align: center; /* Centrar el texto */
+        margin-top: 1rem; /* Espaciado entre el media y el texto */
+    }
+}
+
+
+/* Línea Vertical */
+.timeline-line {
+    position: absolute;
+    left: -20px; /* Separación adicional de las imágenes/videos */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--asparagus);
+    z-index: 0;
+}
+
+/* Punto del Timeline */
+.timeline-point {
+    position: absolute;
+    left: -26px; /* Mantener el punto alineado con la línea */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--asparagus);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Banner de Newsletter */
+.newsletter-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--hunter-green); /* Fondo del banner */
+    color: var(--floral-white); /* Texto en floral white */
+    padding: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra superior */
+    z-index: 1000; /* Siempre visible */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Contenido del Banner */
+.newsletter-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.newsletter-content h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.newsletter-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Input del Email */
+.newsletter-content input {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botón de Suscribirse */
+.newsletter-content .btn-primary {
+    background: var(--asparagus);
+    color: var(--floral-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-content .btn-primary:hover {
+    background: var(--floral-white);
+    color: var(--asparagus);
+}
+
+/* Botón de Cerrar (X) */
+.close-banner {
+    background: transparent;
+    color: var(--floral-white);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-banner:hover {
+    color: var(--asparagus);
+}

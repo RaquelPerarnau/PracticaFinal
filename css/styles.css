@@ -325,3 +325,70 @@ html {
 .footer strong {
     font-weight: bold;
 }
+
+/* ===================================================== 
+    COOKIES
+    =====================================================*/
+
+
+/* Banner de Cookies */
+.cookie-banner {
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Cubre toda la pantalla */
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    color: var(--floral-white); /* Texto en floral white */
+    display: flex; /* Centra el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que esté encima de todo */
+    visibility: hidden; /* Oculto por defecto */
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s; /* Transiciones suaves */
+}
+
+.cookie-banner.active {
+    visibility: visible; /* Visible cuando está activo */
+    opacity: 1;
+}
+
+.cookie-content {
+    background: var(--hunter-green); /* Fondo del contenido */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 500px; /* Ancho máximo */
+    width: 90%; /* Adaptable a pantallas pequeñas */
+}
+
+.cookie-content p {
+    font-size: 1rem; /* Tamaño del texto */
+    margin-bottom: 1rem;
+    color: var(--floral-white); /* Texto en floral white */
+}
+
+.cookie-link {
+    color: var(--asparagus); /* Link en asparagus */
+    text-decoration: underline;
+}
+
+.cookie-link:hover {
+    color: var(--floral-white); /* Cambiar a blanco al pasar el cursor */
+}
+
+.cookie-content .btn-primary {
+    background: var(--asparagus); /* Fondo inicial */
+    border: none;
+    color: var(--floral-white); /* Texto en floral white */
+    padding: 0.5rem 1rem; /* Tamaño del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.cookie-content .btn-primary:hover {
+    background: var(--hunter-green); /* Fondo al hacer hover */
+    color: var(--floral-white); /* Asegura que el texto sigue siendo blanco */
+}

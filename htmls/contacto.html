@@ -6,6 +6,7 @@
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -45,19 +46,132 @@
           </div>
       </div>
     </nav>
-  
-      <!-- Contenido de prueba -->
-    <section style="height: 100vh; background: url('image1.jpg') no-repeat center center/cover;">
-        <h1 style="color: white; text-align: center; padding-top: 40vh;">Sección Inicial</h1>
+
+    <!-- Imagen Principal -->
+    <section class="contact-header position-relative">
+        <!-- Imagen de Fondo -->
+        <img src="../multimedia/imagenes/test.jpg" alt="Imagen Principal" class="img-fluid w-100 header-img">
+        <!-- Overlay Oscuro -->
+        <div class="overlay"></div>
+        <!-- Contenedor del Título -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h1 class="display-3 fw-bold">Contacto</h1>
+        </div>
     </section>
-    <section style="height: 150vh; background-color: var(--celadon);">
-        <h2 style="text-align: center; padding-top: 20vh;">Contenido de Prueba para Scroll</h2>
+    
+
+    <!-- Personal Info y Mapa -->
+    <section class="personal-info py-5 bg-celadon">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Izquierda -->
+                <div class="col-lg-6 text-center">
+                    <h2 class="text-hunter-green mb-4">Información Personal</h2>
+                    <p><strong>Nombre:</strong> Raquel Perarnau López</p>
+                    <p><strong>Email:</strong> 9104737@alumnos.ufv.es</p>
+                    <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                    <p><strong>Dirección:</strong> Carretera Majadahonda</p>
+                    <!-- Imagen Circular -->
+                    <div class="personal-img">
+                        <img src="../multimedia/imagenes/test.jpg" alt="Foto Personal" class="rounded-circle img-fluid">
+                    </div>
+                </div>
+                <!-- Columna Derecha -->
+                <div class="col-lg-6">
+                    <h2 class="text-hunter-green mb-4 text-center">Ubicación</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.0113251300627!2d-3.8366225235969265!3d40.43980435423398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4185d02b000001%3A0x9b035d2695ce702c!2sUniversidad%20Francisco%20de%20Vitoria!5e1!3m2!1ses!2ses!4v1736018302177!5m2!1ses!2ses" 
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Formulario de Contacto -->
+    <section class="contact-form py-5 bg-beige">
+        <div class="container">
+            <h2 class="text-hunter-green mb-4 text-center">Ponte en Contacto con Nosotros</h2>
+            <form id="contactForm" class="row g-3 needs-validation" novalidate>
+                <!-- Nombre -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" required>
+                        <label for="firstName">Nombre</label>
+                        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                    </div>
+                </div>
+                <!-- Apellidos -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellidos" required>
+                        <label for="lastName">Apellidos</label>
+                        <div class="invalid-feedback">Por favor, ingresa tus apellidos.</div>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                        <label for="email">Correo Electrónico</label>
+                        <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+                    </div>
+                </div>
+                <!-- Teléfono -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="phone" placeholder="Teléfono" pattern="[0-9]+" required>
+                        <label for="phone">Teléfono</label>
+                        <div class="invalid-feedback">Por favor, ingresa un número de teléfono válido.</div>
+                    </div>
+                </div>
+                <!-- Motivo -->
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input list="reasons" class="form-control" id="reason" placeholder="Motivo de Contacto" required>
+                        <label for="reason">Motivo de Contacto</label>
+                        <datalist id="reasons">
+                            <option value="Consulta General"></option>
+                            <option value="Lecturas"></option>
+                            <option value="Articulos"></option>
+                            <option value="Otros"></option>
+                        </datalist>
+                        <div class="invalid-feedback">Por favor, selecciona un motivo válido.</div>
+                    </div>
+                </div>
+                <!-- Comentarios -->
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" id="comments" placeholder="Comentarios" style="height: 100px;" required></textarea>
+                        <label for="comments">Comentarios</label>
+                        <div class="invalid-feedback">Por favor, escribe tus comentarios.</div>
+                    </div>
+                </div>
+                <!-- Botón Enviar -->
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
     </section>
 
-    <!-- Contenido -->
-    <section style="height: 100vh; background: url('image1.jpg') no-repeat center center/cover;">
-        <!-- Imagen de fondo -->
+    <!-- Integración de Instagram -->
+    <section class="instagram py-5 bg-hunter-green">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="text-floral-white mb-4">Síguenos en Instagram</h2>
+            <!-- Bloque de Instagram -->
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DEXcGISRh6x/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;">
+                    <a href="https://www.instagram.com/p/DEXcGISRh6x/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"></a>
+                </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
     </section>
+    
+
 
     <!-- Footer -->
     <footer class="footer bg-walnut-brown text-floral-white py-4">
@@ -109,9 +223,9 @@
         </div>
         </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../jscript/script.js"></script>
+    <script src="../jscript/contacto.js"></script>
 </body>
 </html>
 

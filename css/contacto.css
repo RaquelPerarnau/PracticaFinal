@@ -1,0 +1,97 @@
+/* Encabezado con Imagen */
+.contact-header {
+    height: 100vh; /* Ocupa la altura de la pantalla */
+    position: relative; /* Necesario para posicionar el overlay y el texto */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+}
+
+.header-img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 100%; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Mantiene la proporción sin deformarse */
+    position: absolute; /* Posicionada en el fondo */
+    z-index: 0; /* Capa más baja */
+}
+
+.overlay {
+    position: absolute; /* Cubre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparencia oscura */
+    z-index: 1; /* Encima de la imagen, pero debajo del texto */
+}
+
+/* Texto en el Contenedor */
+.contact-header .text-center {
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 2; /* Texto encima del overlay */
+    color: var(--floral-white); /* Título en blanco */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+.contact-header h1 {
+    font-size: 4rem; /* Tamaño grande */
+    line-height: 1.2; /* Espaciado entre líneas */
+}
+
+/* Fondo de la Sección */
+.personal-info {
+    background: var(--celadon); /* Fondo Celadon */
+    color: var(--eerie-black); /* Texto Forest Green */
+}
+
+/* Imagen Circular */
+.personal-img img {
+    width: 200px; /* Tamaño de la imagen */
+    height: 200px;
+    object-fit: cover; /* Ajustar imagen sin distorsión */
+    border: 5px solid var(--eerie-black); /* Borde verde oscuro */
+    margin-top: 1rem;
+}
+
+/* Ajustes para el Mapa */
+.personal-info iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Sección del Formulario */
+.contact-form textarea {
+    resize: none; /* Desactiva el redimensionado */
+}
+
+/* Botón Enviar */
+.contact-form .btn-primary {
+    background: var(--hunter-green);
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background: var(--asparagus);
+    color: var(--floral-white);
+}
+
+/* Sección de Instagram */
+.instagram {
+    background: var(--hunter-green); /* Fondo Hunter Green */
+    color: var(--floral-white); /* Texto Floral White */
+    padding: 3rem 0; /* Espaciado */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.instagram h2 {
+    font-size: 2.5rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 2rem;
+}
+
+.instagram .instagram-media {
+    margin: 0 auto; /* Centrar el embed */
+    max-width: 540px; /* Tamaño máximo del embed */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+

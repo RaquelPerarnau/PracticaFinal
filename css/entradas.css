@@ -1,0 +1,43 @@
+/* Sección de la lista de entradas */
+.entradas-list {
+    background: var(--almond); /* Fondo Celadon */
+    color: var(--eerie-black); /* Texto Eerie Black */
+    padding: 3rem 0; /* Espaciado superior e inferior */
+    margin-top: calc(var(--bs-navbar-height, 56px)); /* Ajustar el margen según la altura de la navbar */
+}
+
+
+.entradas-list h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.entry-item {
+    border-bottom: 1px solid var(--hunter-green); /* Línea de separación */
+    padding: 1rem 0;
+}
+
+.entry-item:last-child {
+    border-bottom: none; /* Quitar línea para el último elemento */
+}
+
+.entry-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.entry-item p {
+    margin: 0.25rem 0;
+}
+
+.entry-item .btn {
+    background: var(--asparagus);
+    color: var(--floral-white);
+    transition: background 0.3s ease;
+}
+
+.entry-item .btn:hover {
+    background: var(--hunter-green);
+    color: var(--floral-white);
+}
