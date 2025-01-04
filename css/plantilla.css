@@ -1,0 +1,55 @@
+/* Encabezado con Imagen */
+.article-header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Transparencia oscura */
+    z-index: 1;
+}
+
+.article-header .text-center {
+    z-index: 2;
+    color: var(--floral-white); /* Título y subtítulo en blanco */
+}
+
+.text-asparagus {
+    color: var(--asparagus); /* Autor en asparagus */
+    font-size: 1.2rem;
+}
+
+/* Contenido del Artículo */
+.article-content {
+    background: var(--walnut-brown); /* Fondo a los lados */
+    padding: 2rem 0;
+}
+
+.article-body {
+    background: var(--floral-white); /* Fondo del artículo */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--hunter-green); /* Texto en hunter green */
+}
+
+/* Video de YouTube */
+#article-video {
+    background: var(--beige); /* Fondo claro */
+}
+
+#youtube-video {
+    border: none;
+}

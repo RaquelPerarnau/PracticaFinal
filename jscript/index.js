@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="carousel-caption">
                             <h5>${article.title}</h5>
                             <p>${article.subtitle}</p>
-                            <a href="htmls/${article.file}" class="link-to-article">Leer más</a>
+                            <a href="htmls/plantilla.html?id=${article.id}" class="btn btn-primary">Leer más</a>
                         </div>
                     </div>
                 `;
