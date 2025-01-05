@@ -202,6 +202,7 @@
     height: 40px;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra opcional */
     transition: transform 0.3s ease; /* Efecto en hover */
+    filter: invert(96%) sepia(4%) saturate(1462%) hue-rotate(48deg) brightness(115%) contrast(98%);
 }
 
 .custom-carousel-icon:hover {

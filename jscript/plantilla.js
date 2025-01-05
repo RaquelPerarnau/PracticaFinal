@@ -27,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return fetch(`../${article.file}`)
                 .then(response => response.text())
                 .then(text => {
-                    // Formatear texto antes de insertarlo
-                    const formattedText = formatMarkdownToHTML(text);
-                    document.getElementById("article-text").innerHTML = formattedText;
+                    document.getElementById("article-text").textContent = text;
 
                     // Si existe video de YouTube
                     if (article.youtube_video) {
@@ -45,28 +43,3 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error al cargar el artículo:", error);
         });
 });
-
-// Función para convertir texto con formato Markdown a HTML
-function formatMarkdownToHTML(markdown) {
-    let html = markdown;
-
-    // Convertir encabezados
-    html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
-    html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-    html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
-
-    // Convertir negritas
-    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-
-    // Convertir cursivas
-    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
-
-    // Convertir enlaces
-    html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
-
-    // Convertir saltos de línea dobles en párrafos
-    html = html.replace(/\n\n/g, '</p><p>');
-    html = `<p>${html}</p>`; // Envolver contenido inicial en párrafos
-
-    return html;
-}
