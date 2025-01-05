@@ -6,7 +6,7 @@
         "date": "2024-11-03",
         "category": "lectura",
         "youtube_video": null, 
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/7habitos.jpg",
         "author": "Raquel P.L.",
         "file": "textos/7habitos.txt"
     },
@@ -17,7 +17,7 @@
         "date": "2024-07-14",
         "category": "articulo",
         "youtube_video": null,
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/deporte.jpg",
         "author": "Raquel P.L.",
         "file": "textos/deporte.txt"
     },
@@ -28,7 +28,7 @@
         "date": "2024-05-02",
         "category": "lectura",
         "youtube_video": null,
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/disciplina.jpg",
         "author": "Raquel P.L.",
         "file": "textos/disciplina.txt"
     },
@@ -39,7 +39,7 @@
         "date": "2024-08-05",
         "category": "lectura",
         "youtube_video": null,
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/essentialism.jpg",
         "author": "Raquel P.L.",
         "file": "textos/essentialism.txt"
     },
@@ -50,7 +50,7 @@
         "date": "2025-01-01",
         "category": "articulo",
         "youtube_video": "https://www.youtube.com/watch?v=dMk_MHw1myA",
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/maslow.webp",
         "author": "Raquel P.L.",
         "file": "textos/Maslow.txt"
     },
@@ -61,7 +61,7 @@
         "date": "2024-12-15",
         "category": "lectura",
         "youtube_video": null,
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/slowProductivity.jpg",
         "author": "Raquel P.L.",
         "file": "textos/slowProductivity.txt"
     },
@@ -71,8 +71,8 @@
         "subtitle": "Una Guía Paso a Paso",
         "date": "2025-01-02",
         "category": "articulo",
-        "youtube_video": "https://www.youtube.com/watch?v=1-SvuFIQjK8&t=6s",
-        "image": "multimedia/imagenes/test.jpg",
+        "youtube_video": "https://www.youtube.com/watch?v=1-SvuFIQjK8&t=4s",
+        "image": "multimedia/imagenes/SMART.png",
         "author": "Raquel P.L.",
         "file": "textos/SMART.txt"
     },
@@ -83,7 +83,7 @@
         "date": "2025-01-03",
         "category": "articulo",
         "youtube_video": null,
-        "image": "multimedia/imagenes/test.jpg",
+        "image": "multimedia/imagenes/variables.png",
         "author": "Raquel P.L.",
         "file": "textos/variables.txt"
     }
