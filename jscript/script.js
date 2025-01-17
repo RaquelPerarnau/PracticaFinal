@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Cambiar la navbar al hacer scroll
-    const navbar = document.querySelector('.custom-navbar');
+    /* const navbar = document.querySelector('.custom-navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > window.innerHeight) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+    }); */
 });
 
 document.addEventListener("DOMContentLoaded", () => {
