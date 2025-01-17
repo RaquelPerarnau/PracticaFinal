@@ -45,11 +45,14 @@
 /* Small devices (phones, menores 767.98px) */
 @media (max-width: 767.98px) {
     .personal-img img {
-        width: 0px; /* Tamaño de la imagen */
-        height: 0px;
+        width: 5px; /* Tamaño de la imagen */
+        height: 5px;
         object-fit: cover; /* Ajustar imagen sin distorsión */
         border: 0px solid var(--eerie-black); /* Borde verde oscuro */
         margin-top: 0rem;
+    }
+    .img-fluid{
+        max-width: 0%;
     }
 }
 
