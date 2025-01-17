@@ -48,7 +48,6 @@
         width: 0px; /* Tamaño de la imagen */
         height: 0px;
         object-fit: cover; /* Ajustar imagen sin distorsión */
-        border: 0px; /* Borde verde oscuro */
         margin-top: 0rem;
     }
     .img-fluid{
