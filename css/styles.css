@@ -34,12 +34,13 @@ html {
     /* Ajustar separación lateral */
 }
 
-.custom-navbar.scrolled {
+/* .custom-navbar.scrolled {
     background-color: var(--floral-white);
     /* Fondo blanco al hacer scroll */
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
     /* Mantener separación lateral al hacer scroll */
-}
+/* }
+ */
 
 /* Logo */
 .custom-navbar .navbar-brand {
@@ -62,16 +63,16 @@ html {
     /* Khaki */
 }
 
-.custom-navbar.scrolled .navbar-brand .logo {
+/* .custom-navbar.scrolled .navbar-brand .logo {
     height: 40px;
     filter: invert(25%) sepia(6%) saturate(3077%) hue-rotate(65deg) brightness(106%) contrast(83%);
     /* Hunter Green */
-}
+/* } */
 
-.custom-navbar.scrolled .navbar-brand .logo:hover {
+/* .custom-navbar.scrolled .navbar-brand .logo:hover {
     filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
     /* Khaki */
-}
+/* } */ */
 
 /* Título de la web */
 .web-title {
@@ -83,9 +84,9 @@ html {
 }
 
 /* Cambiar color con scroll */
-.custom-navbar.scrolled .web-title {
+/* .custom-navbar.scrolled .web-title {
     color: var(--hunter-green); /* Cambiar a verde oscuro */
-}
+/* } */ 
 
 /* Enlaces */
 .custom-navbar .navbar-nav {
@@ -118,20 +119,20 @@ html {
 }
 
 /* Cambios al hacer scroll */
-.custom-navbar.scrolled .nav-link {
+/* .custom-navbar.scrolled .nav-link {
     color: var(--hunter-green);
     /* Texto en hunter green después de scroll */
-}
+/* } */
 
-.custom-navbar.scrolled .nav-link:hover {
+/* .custom-navbar.scrolled .nav-link:hover {
     color: var(--khaki);
     /* Hover en khaki después de scroll */
-}
+/* } */ 
 
-.custom-navbar.scrolled .nav-item.active .nav-link {
+/* .custom-navbar.scrolled .nav-item.active .nav-link {
     color: var(--walnut-brown);
     /* Activo en walnut brown después de scroll */
-}
+/* } */
 
 /* Iconos iniciales (navbar alta) */
 .nav-icon {
@@ -158,21 +159,21 @@ html {
 }
 
 /* Iconos cuando la navbar está scrolled */
-.custom-navbar.scrolled .nav-icon {
+/* .custom-navbar.scrolled .nav-icon {
     filter: invert(25%) sepia(35%) saturate(354%) hue-rotate(85deg) brightness(90%) contrast(92%);
     /* Hunter Green */
-}
+/* } */
 
 /* Hover y activo (navbar scrolled) */
-.custom-navbar.scrolled .nav-link:hover .nav-icon {
+/* .custom-navbar.scrolled .nav-link:hover .nav-icon {
     filter: invert(77%) sepia(18%) saturate(465%) hue-rotate(351deg) brightness(89%) contrast(89%);
     /* Cambiar a khaki */
-}
+/* } */ 
 
-.custom-navbar.scrolled .nav-item.active .nav-icon {
+/* .custom-navbar.scrolled .nav-item.active .nav-icon {
     filter: invert(28%) sepia(44%) saturate(266%) hue-rotate(353deg) brightness(96%) contrast(88%);
     /* Walnut Brown */
-}
+/* } */ 
 
 /* Estilo del icono personalizado */
 /* Botón normal (navbar alta) */
@@ -207,14 +208,14 @@ html {
 }
 
 /* Botón y icono cuando la navbar está scrolled */
-.custom-navbar.scrolled .navbar-toggler {
+/* .custom-navbar.scrolled .navbar-toggler {
     background: transparent;
-}
+} */
 
-.custom-navbar.scrolled .custom-toggler-icon {
+/* .custom-navbar.scrolled .custom-toggler-icon {
     filter: invert(25%) sepia(35%) saturate(354%) hue-rotate(85deg) brightness(90%) contrast(92%);
     /* Hunter Green */
-}
+/* }  */
 
 /* Quitar contorno al botón en focus y hover */
 .navbar-toggler:focus,
